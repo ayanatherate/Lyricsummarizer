@@ -12,10 +12,11 @@ from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.options import Options
 import chromedriver_autoinstaller
-
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import glob
-import os
+
 
 import streamlit as st
 from selenium import webdriver
