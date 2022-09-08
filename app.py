@@ -11,11 +11,13 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.options import Options
+import chromedriver_autoinstaller
+
 
 from transformers import pipeline
 
-
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver=webdriver.Chrome(chromedriver_autoinstaller.install())
+#driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 st.title('Music Lyrics Summarizer')
 st.subheader('A Summary of the lyrics of your favourite English songs, prepared by AI')
