@@ -5,4 +5,4 @@ bs4
 transformers
 lxml
 tensorflow
-pytorch
+torch
