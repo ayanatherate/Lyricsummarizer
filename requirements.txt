@@ -5,5 +5,5 @@ bs4
 transformers
 lxml
 tensorflow
-https://download.pytorch.org/whl/cpu/torch-1.1.0-cp35-cp35m-win_amd64.whl
+torch==1.1.0
 
