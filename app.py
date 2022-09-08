@@ -14,10 +14,41 @@ from selenium.webdriver.chrome.options import Options
 import chromedriver_autoinstaller
 
 
+import glob
+import os
+
+import streamlit as st
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
+
+options = Options()
+options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--disable-gpu")
+options.add_argument("--disable-features=NetworkService")
+options.add_argument("--window-size=1920x1080")
+options.add_argument("--disable-features=VizDisplayCompositor")
+
+
+def delete_selenium_log():
+    if os.path.exists('selenium.log'):
+        os.remove('selenium.log')
+
+
+def show_selenium_log():
+    if os.path.exists('selenium.log'):
+        with open('selenium.log') as f:
+            content = f.read()
+            st.code(content)
+
+
 from transformers import pipeline
 
-chromedriver_autoinstaller.install()
-driver=webdriver.Chrome()
+
+driver=webdriver.Chrome(options=options, service_log_path='selenium.log')
 #driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 st.title('Music Lyrics Summarizer')
