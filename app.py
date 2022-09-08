@@ -16,7 +16,8 @@ import chromedriver_autoinstaller
 
 from transformers import pipeline
 
-driver=webdriver.Chrome(chromedriver_autoinstaller.install())
+chromedriver_autoinstaller.install()
+driver=webdriver.Chrome()
 #driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 st.title('Music Lyrics Summarizer')
