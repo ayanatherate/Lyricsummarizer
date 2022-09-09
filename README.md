@@ -7,4 +7,5 @@
 <h4> cd Lyricsummarizer-app </h4>
 <h4> streamlit run a.py </h4>
 
-<h2> Enjoy!</h2>
+<h2> Future Scopes:</h2>
+<h4> Addition of song-lyrics emotion analysis feature </h4>
