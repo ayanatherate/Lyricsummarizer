@@ -6,4 +6,4 @@ transformers
 lxml
 tensorflow
 torch
-
+git https://github.com/ayanatherate/lyricscraper.git
