@@ -1,6 +1,6 @@
 # Lyricsummarizer-app
 
-<h2> REun the application on your local machine: </h2>
+<h2> Run the application on your local machine: </h2>
 
 <h3> Terminal </h3>
 <h4> git clone https://github.com/ayanatherate/Lyricsummarizer-app.git </h4>
