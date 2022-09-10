@@ -6,6 +6,7 @@
 <p>
 <p1> git clone https://github.com/ayanatherate/Lyricsummarizer-app.git </p1><br>
 <p1> cd Lyricsummarizer-app </p1><br>
+<p1> pip install -r requirements.txt </p1><br>
 <p1> streamlit run app.py </p1><br>
 </p>
 
