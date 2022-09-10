@@ -1,6 +1,6 @@
-# Lyricsummarizer-app
+# Made with &hearts; using BERT
 
-<h2> Run the application on your local machine: </h2>
+<h3> Run the application on your local machine: </h3>
 
 <h2>On Terminal </h2>
 <p>
@@ -10,4 +10,4 @@
 </p>
 
 <h2> Future Scopes:</h2>
-<h4> Addition of song-lyrics emotion analysis feature </h4>
+<p1> Addition of song-lyrics emotion analysis feature </p1>
