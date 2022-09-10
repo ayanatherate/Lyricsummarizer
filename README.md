@@ -1,4 +1,4 @@
-# Made with &hearts; using BERT
+# Made with &hearts; using <a href="https://huggingface.co/knkarthick">BERT </a>
 
 <h3> Run the application on your local machine: </h3>
 
