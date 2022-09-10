@@ -2,8 +2,6 @@
 
 <h3> Run the application on your local machine: </h3>
 
-<h2>On Terminal </h2>
-
 ```
 git clone https://github.com/ayanatherate/Lyricsummarizer-app.git 
 cd Lyricsummarizer-app
