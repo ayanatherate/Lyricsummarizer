@@ -1,3 +1,4 @@
+streamlit
 selenium
 chromedriver-autoinstaller
 webdriver_manager
@@ -6,4 +7,3 @@ transformers
 lxml
 tensorflow
 torch
-
