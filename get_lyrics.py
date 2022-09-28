@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Sep  8 12:05:42 2022
 
-@author: User
-"""
 
 def get_lyrics(inp):
     
