@@ -10,5 +10,3 @@ streamlit run app.py
 ```
 
 
-<h2> Future Scopes:</h2>
-<p1> Addition of song-lyrics emotion analysis feature </p1>
