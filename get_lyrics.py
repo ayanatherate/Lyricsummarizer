@@ -17,7 +17,7 @@ def get_lyrics(inp):
 
     #driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     browser = webdriver.Chrome(
-        executable_path="C:\Users\User\Desktop\PROGRAM_FILES\chromedriver.exe")
+        executable_path="C:\Users\User\Desktop\PROGRAM_FILES\chromedriver")
     
     lyrics_text=[]
     strung_together=''.join(inp.split(' '))
