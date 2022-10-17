@@ -7,16 +7,25 @@ def get_lyrics(inp):
     from selenium.webdriver.chrome.service import Service
     from webdriver_manager.chrome import ChromeDriverManager
     from bs4 import BeautifulSoup
+    
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--no-sandbox")
+    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
 
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    #driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    browser = webdriver.Chrome(
+        executable_path="C:\Users\User\Desktop\PROGRAM_FILES\chromedriver.exe")
     
     lyrics_text=[]
     strung_together=''.join(inp.split(' '))
     initial="https://www.google.com/search?q="
     str_=f"{initial}{strung_together}+lyrics&oq="
     
-    driver.get(str_) 
-    src = driver.page_source
+    browser.get(str_) 
+    src = browser.page_source
     soup = BeautifulSoup(src, 'lxml')
     
     lyrics_soup = soup.find_all('div', {'class': 'ujudUb'})
