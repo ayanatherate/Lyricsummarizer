@@ -8,16 +8,10 @@ def get_lyrics(inp):
     from webdriver_manager.chrome import ChromeDriverManager
     from bs4 import BeautifulSoup
     
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--no-sandbox")
-    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
-
-    #driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    browser = webdriver.Chrome(
-        executable_path="C:\Users\User\Desktop\PROGRAM_FILES\chromedriver")
+    
+    browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    #browser = webdriver.Chrome(
+        executable_path=r"C:\Users\User\Desktop\PROGRAM_FILES\chromedriver")
     
     lyrics_text=[]
     strung_together=''.join(inp.split(' '))
