@@ -3,6 +3,7 @@ selenium
 chromedriver-autoinstaller
 webdriver_manager
 bs4
+requests
 transformers
 lxml
 tensorflow
