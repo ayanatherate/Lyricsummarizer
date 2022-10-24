@@ -4,12 +4,13 @@
 def get_lyrics(inp):
     
     from selenium import webdriver
+    import requests
     from selenium.webdriver.chrome.service import Service
     from webdriver_manager.chrome import ChromeDriverManager
     from bs4 import BeautifulSoup
     
     
-    browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    #browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     #browser = webdriver.Chrome(
         #executable_path=r"C:\Users\User\Desktop\PROGRAM_FILES\chromedriver")
     
@@ -18,8 +19,10 @@ def get_lyrics(inp):
     initial="https://www.google.com/search?q="
     str_=f"{initial}{strung_together}+lyrics&oq="
     
-    browser.get(str_) 
-    src = browser.page_source
+    #browser.get(str_) 
+    r=requests.get(url)
+    src=r.content
+    #src = browser.page_source
     soup = BeautifulSoup(src, 'lxml')
     
     lyrics_soup = soup.find_all('div', {'class': 'ujudUb'})
