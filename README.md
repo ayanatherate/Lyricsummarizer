@@ -9,6 +9,6 @@ pip install -r requirements.txt
 streamlit run app.py 
 ```
 
-<h3>Improvements needed: </h3>
+<h3>Things to work on: </h3>
 1) As expected, the huge size of the Transformers model makes it difficult to deploy it anywhere. <br>
 2) Addition of song-lyrics emotion analysis feature.
